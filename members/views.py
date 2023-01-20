@@ -11,9 +11,10 @@ def login_user(request):
 
 		if user is not None:
 			login(request, user)
+			return redirect(to='home')
 			# Redirect to a success page
 		else:
-			pass
-			# Return an invalid login message
+			messages.success(request, "There was an error loggin in. Try again.")
+			return redirect(to='login')
 	else:
 		return render(request, "authenticate/login.html", {})
