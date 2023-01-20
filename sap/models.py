@@ -49,3 +49,9 @@ class Subject(models.Model):
 
 	def __str__(self):
 		return f'Grade {self.grade} {self.subjectname}'
+
+
+class Assessment(models.Model):
+	assessmentid = models.CharField(
+		max_length=20, default=random.randrange(10000, 99999,1), primary_key=True)
+	
