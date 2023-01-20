@@ -1,5 +1,5 @@
 from django.shortcuts import render
-frpm django.contrib.auth import login, logout
+from django.contrib.auth import login, logout
 
 
 
