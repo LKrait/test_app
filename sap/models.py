@@ -15,6 +15,9 @@ class AcademicYear(models.Model):
 		choices=[(2023, 2023), (2024, 2024), (2025, 2025)], verbose_name="Academic Year"
 	)
 
+	def __str__(self):
+		return f'{self.academicyear}'
+
 
 class Term(models.Model):
 	termid = models.CharField(

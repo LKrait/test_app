@@ -1,8 +1,11 @@
 from django.contrib import admin
 from . import models
 
+
 class AcademicYearAdmin(admin.ModelAdmin):
 	verbose_name = ['Academic Year']
+	list_display = ['academicyearid', 'academicyear']
+
 
 admin.site.register(models.AcademicYear, AcademicYearAdmin)
 admin.site.register(models.Term)
