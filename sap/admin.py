@@ -14,6 +14,6 @@ admin.site.register(models.Subject)
 
 
 #Configuring admin title
-admin.site.site_header = "SAP"
+admin.site.site_header = "Student AP"
 admin.site.site_title = "SAP"
 admin.site.index_title = "Welcome to SAP"
